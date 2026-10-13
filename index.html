@@ -1,0 +1,460 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffe9f1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cg fill='%23ff8fb8'%3E%3Ccircle cx='20' cy='9' r='8'/%3E%3Ccircle cx='30.5' cy='16.6' r='8'/%3E%3Ccircle cx='26.5' cy='28.9' r='8'/%3E%3Ccircle cx='13.5' cy='28.9' r='8'/%3E%3Ccircle cx='9.5' cy='16.6' r='8'/%3E%3C/g%3E%3Ccircle cx='20' cy='20' r='6' fill='%23ffd66b'/%3E%3C/svg%3E">
+<title>Vokabelheft Seite 05</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Nunito:wght@400;600;700;800&display=swap">
+<style>
+/* Layout: one narrow column on a polka-dot pink desk — the trainer is a ruled notebook sheet (punched holes, margin line, washi tape), the full word list is folded underneath. */
+:root {
+  --paper: #ffe9f1;
+  --dot: #ffd0e0;
+  --sheet: #fffafc;
+  --ink: #5a2140;
+  --ink-soft: #9c5f7c;
+  --rule: #f9d3e1;
+  --line: #f3b3ca;
+  --margin: #f58fb3;
+  --pink: #f0679b;
+  --pink-wash: #ffe1ec;
+  --berry: #cf3876;
+  --lilac: #8a5cc0;
+  --lilac-wash: #f0e4fa;
+  --on-accent: #ffffff;
+  --butter: #ffd66b;
+  --leaf: #8fc79a;
+  --shadow: rgba(207, 56, 118, .18);
+  --good: #1f7a4d;
+  --good-wash: #dff3e7;
+  --bad: #b3312b;
+  --bad-wash: #fde0de;
+  --warn: #8a5a00;
+  --warn-wash: #fff0c9;
+  --font-body: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-hand: "Caveat", "Segoe Print", "Comic Sans MS", cursive;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #2a1422; --dot: #3b1d30; --sheet: #3a1e30; --ink: #ffe6f0; --ink-soft: #dba6c0;
+    --rule: #4d2a41; --line: #6e3d5b; --margin: #a8537a; --pink: #ff8fb8; --pink-wash: #55263f;
+    --berry: #ff8fb8; --lilac: #cba9ec; --lilac-wash: #45305a; --on-accent: #2e0f20;
+    --butter: #ffd66b; --leaf: #7fbf8f; --shadow: rgba(0, 0, 0, .35);
+    --good: #7fdcaa; --good-wash: #1b3a2b; --bad: #ff9d96; --bad-wash: #4a2323;
+    --warn: #ffd66b; --warn-wash: #453616;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #2a1422; --dot: #3b1d30; --sheet: #3a1e30; --ink: #ffe6f0; --ink-soft: #dba6c0;
+  --rule: #4d2a41; --line: #6e3d5b; --margin: #a8537a; --pink: #ff8fb8; --pink-wash: #55263f;
+  --berry: #ff8fb8; --lilac: #cba9ec; --lilac-wash: #45305a; --on-accent: #2e0f20;
+  --butter: #ffd66b; --leaf: #7fbf8f; --shadow: rgba(0, 0, 0, .35);
+  --good: #7fdcaa; --good-wash: #1b3a2b; --bad: #ff9d96; --bad-wash: #4a2323;
+  --warn: #ffd66b; --warn-wash: #453616;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body {
+  margin: 0;
+  background: var(--paper) radial-gradient(var(--dot) 2px, transparent 2.5px) 0 0 / 22px 22px;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  padding-inline: 16px;
+  padding-block: 24px 56px;
+}
+.wrap { max-width: 600px; margin-inline: auto; display: flex; flex-direction: column; gap: 26px; }
+.fl { width: 28px; height: 28px; flex: none; }
+
+.top { display: flex; flex-direction: column; gap: 10px; }
+.title { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 10px; }
+h1 { font-family: var(--font-hand); font-weight: 700; font-size: 3.1rem; line-height: 1; margin: 0; color: var(--berry); }
+h1 small { font-family: var(--font-body); font-weight: 700; font-size: .85rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); margin-left: .3em; }
+.title .f1 { color: var(--pink); transform: rotate(-12deg); }
+.title .f2 { color: var(--lilac); width: 20px; height: 20px; align-self: flex-start; }
+.title .f3 { color: var(--line); width: 34px; height: 34px; margin-left: auto; transform: rotate(18deg); }
+.lede { margin: 0; color: var(--ink-soft); max-width: 60ch; }
+
+.dir { display: flex; flex-wrap: wrap; gap: 8px; }
+.dir button {
+  font: 700 .95rem var(--font-body); color: var(--ink); background: var(--sheet);
+  border: 2px solid var(--line); border-radius: 999px; padding: 8px 16px; cursor: pointer;
+}
+.dir button[aria-pressed="true"] { background: var(--berry); color: var(--on-accent); border-color: var(--berry); }
+
+.card { display: flex; flex-direction: column; gap: 16px; }
+.sheet {
+  position: relative;
+  background-color: var(--sheet);
+  background-image:
+    linear-gradient(90deg, transparent 42px, var(--margin) 42px, var(--margin) 44px, transparent 44px),
+    repeating-linear-gradient(transparent 0 31px, var(--rule) 31px 32px);
+  background-position: 0 0, 0 10px;
+  border-radius: 4px 16px 16px 4px;
+  box-shadow: 0 6px 0 var(--line), 0 14px 24px var(--shadow);
+  padding: 34px 18px 28px 58px;
+}
+.sheet::before {
+  content: ""; position: absolute; left: 13px; top: 0; bottom: 0; width: 18px;
+  background: radial-gradient(circle at 9px 9px, var(--paper) 7px, var(--line) 7.5px, transparent 8.5px) 0 30px / 18px 70px repeat-y;
+}
+.sheet::after {
+  content: ""; position: absolute; top: -13px; left: 50%; width: 120px; height: 28px; margin-left: -60px;
+  transform: rotate(-3deg); opacity: .9;
+  background: repeating-linear-gradient(45deg, var(--pink) 0 8px, var(--line) 8px 16px);
+  box-shadow: 0 2px 4px var(--shadow);
+}
+.sheet .corner { position: absolute; right: -10px; bottom: -14px; width: 46px; height: 46px; color: var(--pink); transform: rotate(14deg); }
+.sheet .corner.small { right: 30px; bottom: -8px; width: 26px; height: 26px; color: var(--lilac); transform: rotate(-20deg); }
+
+.progress { display: flex; align-items: center; gap: 14px; font-size: .9rem; font-weight: 700; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.bar { flex: 1; height: 10px; background: var(--pink-wash); border-radius: 5px; margin-left: 10px; }
+.bar i { display: block; position: relative; height: 100%; width: 0; background: var(--pink); border-radius: 5px; transition: width .3s; }
+.bar i::after {
+  content: ""; position: absolute; right: -12px; top: -7px; width: 24px; height: 24px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cg fill='%23ff9cc0' stroke='%23e0558c' stroke-width='1.5'%3E%3Ccircle cx='20' cy='9' r='8'/%3E%3Ccircle cx='30.5' cy='16.6' r='8'/%3E%3Ccircle cx='26.5' cy='28.9' r='8'/%3E%3Ccircle cx='13.5' cy='28.9' r='8'/%3E%3Ccircle cx='9.5' cy='16.6' r='8'/%3E%3C/g%3E%3Ccircle cx='20' cy='20' r='6' fill='%23ffd66b'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.tag {
+  align-self: flex-start; font-weight: 800; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase;
+  padding: 3px 12px; border-radius: 999px; color: var(--on-accent); transform: rotate(-2deg);
+}
+.tag.de { background: var(--lilac); }
+.tag.en { background: var(--berry); }
+
+.prompt {
+  font-family: var(--font-hand); font-weight: 700; font-size: clamp(2.4rem, 10vw, 3.4rem);
+  line-height: 1.1; margin: 0; overflow-wrap: anywhere;
+}
+.note { margin: -10px 0 0; color: var(--ink-soft); font-size: .92rem; }
+
+form { display: flex; flex-direction: column; gap: 10px; }
+label.ask { font-size: .92rem; font-weight: 700; color: var(--ink-soft); }
+#answer {
+  width: 100%; font: 700 1.2rem var(--font-body); color: var(--ink);
+  background: var(--pink-wash); border: 2px solid var(--line); border-radius: 14px; padding: 12px 14px;
+}
+.card.to-de #answer { background: var(--lilac-wash); }
+.keys { display: flex; gap: 6px; }
+.keys button {
+  font: 700 1.05rem var(--font-body); width: 42px; height: 38px; cursor: pointer;
+  color: var(--ink); background: var(--sheet); border: 2px solid var(--line); border-radius: 12px;
+}
+.actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn {
+  font: 800 1rem var(--font-body); padding: 11px 22px; border-radius: 999px; cursor: pointer;
+  border: 2px solid var(--berry); background: var(--berry); color: var(--on-accent);
+  box-shadow: 0 3px 0 var(--line);
+}
+.btn:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--line); }
+.btn.ghost { background: var(--sheet); color: var(--ink); border-color: var(--line); }
+:is(button, input, summary):focus-visible { outline: 3px solid var(--pink); outline-offset: 2px; }
+
+.fb { border-radius: 14px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; }
+.fb strong { font-weight: 800; }
+.fb.good { background: var(--good-wash); color: var(--good); }
+.fb.bad { background: var(--bad-wash); color: var(--bad); }
+.fb.warn { background: var(--warn-wash); color: var(--warn); }
+.fb .pair { color: var(--ink); font-family: var(--font-hand); font-weight: 700; font-size: 1.6rem; line-height: 1.2; overflow-wrap: anywhere; }
+.fb .also { color: var(--ink); font-size: .92rem; }
+
+.finish h2 { font-family: var(--font-hand); font-weight: 700; font-size: 2.2rem; line-height: 1.1; margin: 0; color: var(--berry); }
+.finish p { margin: 0; }
+.finish ul { margin: 0; padding-left: 1.2em; }
+.finish li::marker { content: "✿ "; color: var(--pink); }
+.bouquet { display: flex; gap: 6px; color: var(--pink); }
+.bouquet .fl:nth-child(even) { color: var(--lilac); }
+
+details.dict { background: var(--sheet); border: 2px solid var(--line); border-radius: 18px; }
+details.dict summary { cursor: pointer; padding: 14px 18px; font-weight: 800; }
+details.dict summary::marker { color: var(--pink); }
+.dict-body { padding: 0 14px 18px; display: flex; flex-direction: column; gap: 12px; }
+#search {
+  width: 100%; font: 600 1rem var(--font-body); color: var(--ink); background: var(--pink-wash);
+  border: 2px solid var(--line); border-radius: 999px; padding: 9px 16px;
+}
+.scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+th { font-weight: 800; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; text-align: left; padding: 6px 10px; color: var(--on-accent); }
+th.en { background: var(--berry); border-radius: 10px 0 0 10px; }
+th.de { background: var(--lilac); border-radius: 0 10px 10px 0; }
+td { vertical-align: top; padding: 8px 10px; border-bottom: 2px dotted var(--line); overflow-wrap: anywhere; }
+tbody tr:nth-child(even) td:first-child { background: var(--pink-wash); }
+tbody tr:nth-child(even) td:last-child { background: var(--lilac-wash); }
+td b { font-family: var(--font-hand); font-weight: 700; font-size: 1.45rem; line-height: 1.15; display: block; }
+td span { display: block; font-size: .85rem; color: var(--ink-soft); }
+.empty { color: var(--ink-soft); margin: 0; }
+.foot { margin: 0; text-align: center; color: var(--ink-soft); font-size: .9rem; }
+@media (prefers-reduced-motion: reduce) { .bar i { transition: none; } }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="fl" viewBox="0 0 40 40">
+    <g fill="currentColor"><circle cx="20" cy="9" r="8"/><circle cx="30.5" cy="16.6" r="8"/><circle cx="26.5" cy="28.9" r="8"/><circle cx="13.5" cy="28.9" r="8"/><circle cx="9.5" cy="16.6" r="8"/></g>
+    <circle cx="20" cy="20" r="6" fill="var(--butter)"/>
+  </symbol>
+</svg>
+<main class="wrap">
+  <header class="top">
+    <div class="title"><svg class="fl f1" aria-hidden="true"><use href="#fl"/></svg><h1>Vokabelheft <small>Seite 05</small></h1><svg class="fl f2" aria-hidden="true"><use href="#fl"/></svg><svg class="fl f3" aria-hidden="true"><use href="#fl"/></svg></div>
+    <p class="lede">17 слов из тетради ♡ Пиши перевод, синонимы тоже засчитываются. Слова с ошибкой вернутся ещё раз, пока не получатся.</p>
+    <div class="dir" role="group" aria-label="Направление перевода">
+      <button type="button" id="dir-de2en" aria-pressed="true">Deutsch → English</button>
+      <button type="button" id="dir-en2de" aria-pressed="false">English → Deutsch</button>
+    </div>
+  </header>
+
+  <section class="card sheet" id="trainer">
+    <svg class="fl corner" aria-hidden="true"><use href="#fl"/></svg>
+    <svg class="fl corner small" aria-hidden="true"><use href="#fl"/></svg>
+    <div class="progress"><div class="bar"><i id="bar"></i></div><span id="count">0 / 17</span></div>
+    <span class="tag de" id="tag">Deutsch</span>
+    <p class="prompt" id="prompt">Minderheit</p>
+    <p class="note" id="note" hidden></p>
+    <form id="form" autocomplete="off">
+      <label class="ask" for="answer" id="ask">Как это по-английски?</label>
+      <input id="answer" type="text" autocapitalize="off" autocorrect="off" spellcheck="false">
+      <div class="keys" id="keys" hidden>
+        <button type="button" data-ch="ä">ä</button><button type="button" data-ch="ö">ö</button><button type="button" data-ch="ü">ü</button><button type="button" data-ch="ß">ß</button>
+      </div>
+      <div class="actions">
+        <button class="btn" type="submit" id="go">Проверить</button>
+        <button class="btn ghost" type="button" id="peek">Подсмотреть</button>
+      </div>
+    </form>
+    <div id="fb" aria-live="polite"></div>
+  </section>
+
+  <section class="card sheet finish" id="finish" hidden>
+    <div class="bouquet"><svg class="fl " aria-hidden="true"><use href="#fl"/></svg><svg class="fl " aria-hidden="true"><use href="#fl"/></svg><svg class="fl " aria-hidden="true"><use href="#fl"/></svg><svg class="fl " aria-hidden="true"><use href="#fl"/></svg><svg class="fl " aria-hidden="true"><use href="#fl"/></svg></div>
+    <h2>Все слова пройдены (≧◡≦)</h2>
+    <p id="score"></p>
+    <div id="missed"></div>
+    <div class="actions">
+      <button class="btn" type="button" id="again">Ещё раз все слова</button>
+      <button class="btn ghost" type="button" id="again-missed">Только слова с ошибками</button>
+      <button class="btn ghost" type="button" id="swap">В другую сторону</button>
+    </div>
+  </section>
+
+  <details class="dict" id="dict">
+    <summary>Все слова и засчитываемые синонимы</summary>
+    <div class="dict-body">
+      <input id="search" type="search" placeholder="Найти слово (английское или немецкое)" aria-label="Найти слово">
+      <div class="scroll">
+        <table>
+          <thead><tr><th class="en">Vokabel</th><th class="de">Deutsch</th></tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+      <p class="empty" id="empty" hidden>Такого слова в списке нет.</p>
+    </div>
+  </details>
+  <p class="foot">✿ viel Erfolg beim Test ✿</p>
+</main>
+
+<script>
+// Первое слово в паре — как в тетради, enAlt/deAlt — синонимы, которые тоже засчитываются.
+var WORDS = [
+  { en: "minority", de: "Minderheit", enAlt: [], deAlt: [] },
+  { en: "to be allowed to", de: "erlauben", enAlt: ["to allow", "to permit", "to be permitted to", "may"], deAlt: ["dürfen", "erlaubt sein", "erlaubt werden"] },
+  { en: "violence", de: "Gewalt", enAlt: [], deAlt: ["Gewalttätigkeit"] },
+  { en: "to ban", de: "etw. verbieten", enAlt: ["to prohibit", "to forbid"], deAlt: ["untersagen"] },
+  { en: "to continue", de: "weitermachen", enAlt: ["to go on", "to carry on", "to keep going", "to proceed"], deAlt: ["fortfahren", "fortsetzen", "weiterführen", "weitergehen"] },
+  { en: "to be sentenced", de: "verurteilt werden", enAlt: ["to be convicted"], deAlt: ["verurteilt sein"] },
+  { en: "diverse", de: "unterschiedlich", enAlt: ["different", "varied", "various"], deAlt: ["vielfältig", "verschieden", "divers"] },
+  { en: "society", de: "Gesellschaft", enAlt: [], deAlt: [] },
+  { en: "apartheid", de: "Apartheid", enAlt: ["racial segregation"], deAlt: ["Rassentrennung"] },
+  { en: "relation", de: "Beziehung", enAlt: ["relationship", "connection"], deAlt: ["Verhältnis", "Verbindung", "Relation"] },
+  { en: "the cons and pro", de: "das Pro und Contra", enAlt: ["the pros and cons", "the cons and pros", "the pro and con", "the pro and contra", "advantages and disadvantages"], deAlt: ["Pro und Kontra", "Vor- und Nachteile", "das Für und Wider"] },
+  { en: "reserve", de: "Schutzgebiet", enAlt: ["nature reserve", "reservation", "protected area", "sanctuary"], deAlt: ["Reservat", "Naturschutzgebiet"] },
+  { en: "facet", de: "Facette", enAlt: ["aspect"], deAlt: ["Aspekt", "Seite"] },
+  { en: "rainbow", de: "Regenbogen", enAlt: [], deAlt: [] },
+  { en: "lingua franca", de: "Lingua Franca", enAlt: ["a common language"], deAlt: ["Verkehrssprache", "gemeinsame Sprache"], note: "= a common language" },
+  { en: "non", de: "nicht", enAlt: ["not"], deAlt: [], note: "z. B. non-speaker" },
+  { en: "to be forced to", de: "gezwungen werden", enAlt: ["to be made to", "to be compelled to", "to have to"], deAlt: ["gezwungen sein", "müssen"] }
+];
+
+var LEAD = { to: 1, the: 1, a: 1, an: 1, der: 1, die: 1, das: 1, ein: 1, eine: 1, etw: 1, etwas: 1, sth: 1, something: 1 };
+var TAIL = { to: 1, zu: 1 };
+
+// «to ban» = «ban», «die Minderheit» = «Minderheit», «dürfen» = «duerfen» = «durfen».
+function norm(s) {
+  s = s.toLowerCase().replace(/\(.*?\)/g, " ").replace(/[-–—\/]/g, " ").replace(/[.,;:!?'"’`]/g, "");
+  s = s.replace(/ä/g, "a").replace(/ö/g, "o").replace(/ü/g, "u").replace(/ß/g, "ss").replace(/([aou])e/g, "$1");
+  var t = s.split(/\s+/).filter(Boolean), full = t.join(" ");
+  while (t.length > 1 && LEAD[t[0]]) t.shift();
+  while (t.length > 1 && TAIL[t[t.length - 1]]) t.pop();
+  return t.join(" ") || full;
+}
+
+function dist(a, b) {
+  var prev = [], i, j;
+  for (j = 0; j <= b.length; j++) prev[j] = j;
+  for (i = 1; i <= a.length; i++) {
+    var cur = [i];
+    for (j = 1; j <= b.length; j++) {
+      cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+    }
+    prev = cur;
+  }
+  return prev[b.length];
+}
+
+function answersFor(w, dir) {
+  return dir === "de2en" ? [w.en].concat(w.enAlt) : [w.de].concat(w.deAlt);
+}
+
+// "main" — слово из тетради, "alt" — синоним, "near" — одна опечатка, "no" — мимо.
+function check(input, w, dir) {
+  var n = norm(input), list = answersFor(w, dir), near = false;
+  if (!n) return "no";
+  for (var i = 0; i < list.length; i++) {
+    var a = norm(list[i]);
+    if (a === n) return i === 0 ? "main" : "alt";
+    if (a.length >= 5 && dist(a, n) === 1) near = true;
+  }
+  return near ? "near" : "no";
+}
+
+function shuffle(a) {
+  for (var i = a.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1)), t = a[i]; a[i] = a[j]; a[j] = t;
+  }
+  return a;
+}
+
+if (typeof document !== "undefined") (function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var dir = "de2en", queue = [], total = 0, done = 0, missed = {}, phase = "ask";
+
+  try { if (localStorage.getItem("vokabel-dir") === "en2de") dir = "en2de"; } catch (e) {}
+
+  function esc(s) { return s.replace(/&/g, "&amp;").replace(/</g, "&lt;"); }
+
+  function start(indexes) {
+    queue = shuffle(indexes.slice());
+    total = queue.length; done = 0; missed = {};
+    $("finish").hidden = true; $("trainer").hidden = false;
+    show();
+  }
+
+  function all() { return WORDS.map(function (_, i) { return i; }); }
+
+  function show() {
+    var w = WORDS[queue[0]], toEn = dir === "de2en";
+    phase = "ask";
+    $("trainer").classList.toggle("to-de", !toEn);
+    $("tag").textContent = toEn ? "Deutsch" : "Vokabel";
+    $("tag").className = "tag " + (toEn ? "de" : "en");
+    $("prompt").textContent = toEn ? w.de : w.en;
+    $("note").hidden = !w.note; $("note").textContent = w.note || "";
+    $("ask").textContent = toEn ? "Как это по-английски?" : "Как это по-немецки?";
+    $("keys").hidden = toEn;
+    $("answer").value = ""; $("answer").readOnly = false;
+    $("go").textContent = "Проверить"; $("peek").hidden = false;
+    $("fb").innerHTML = "";
+    $("bar").style.width = (100 * done / total) + "%";
+    $("count").textContent = done + " / " + total;
+    $("dir-de2en").setAttribute("aria-pressed", String(toEn));
+    $("dir-en2de").setAttribute("aria-pressed", String(!toEn));
+    $("answer").focus({ preventScroll: true });
+  }
+
+  function reveal(kind, head) {
+    var w = WORDS[queue[0]], others = answersFor(w, dir).slice(1);
+    var html = "<strong>" + head + "</strong><span class=\"pair\">" + esc(w.de) + " = " + esc(w.en) + "</span>";
+    if (others.length) html += "<span class=\"also\">Ещё подходит: " + esc(others.join(", ")) + "</span>";
+    $("fb").innerHTML = "<div class=\"fb " + kind + "\">" + html + "</div>";
+    phase = "next";
+    $("answer").readOnly = true;
+    $("go").textContent = "Дальше"; $("peek").hidden = true;
+    $("go").focus({ preventScroll: true });
+  }
+
+  function fail(head) {
+    var i = queue.shift();
+    missed[i] = true;
+    queue.splice(Math.min(3, queue.length), 0, i);
+    queue.unshift(i);            // оставить на экране до «Дальше»
+    reveal("bad", head);
+    queue.shift();
+  }
+
+  $("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (phase === "next") {
+      if (queue.length) show(); else finish();
+      return;
+    }
+    var res = check($("answer").value, WORDS[queue[0]], dir);
+    if (res === "main" || res === "alt") {
+      reveal("good", res === "main" ? "Верно! ✿" : "Верно, это синоним. В тетради записано так:");
+      queue.shift(); done++;
+      $("bar").style.width = (100 * done / total) + "%";
+      $("count").textContent = done + " / " + total;
+    } else if (res === "near") {
+      $("fb").innerHTML = "<div class=\"fb warn\"><strong>Почти! Одна буква не та, проверь написание и попробуй ещё раз.</strong></div>";
+      $("answer").focus({ preventScroll: true });
+    } else if (!$("answer").value.trim()) {
+      $("fb").innerHTML = "<div class=\"fb warn\"><strong>Напиши перевод или нажми «Подсмотреть».</strong></div>";
+    } else {
+      fail("Не то. Правильно так:");
+    }
+  });
+
+  $("peek").addEventListener("click", function () { fail("Запоминай, это слово ещё вернётся:"); });
+
+  $("keys").addEventListener("click", function (e) {
+    var ch = e.target.getAttribute && e.target.getAttribute("data-ch"), inp = $("answer");
+    if (!ch || inp.readOnly) return;
+    var a = inp.selectionStart, b = inp.selectionEnd;
+    inp.value = inp.value.slice(0, a) + ch + inp.value.slice(b);
+    inp.focus(); inp.setSelectionRange(a + 1, a + 1);
+  });
+
+  function finish() {
+    var m = Object.keys(missed).map(Number), first = total - m.length;
+    $("trainer").hidden = true; $("finish").hidden = false;
+    $("score").textContent = "С первой попытки: " + first + " из " + total + "." + (m.length ? "" : " Ни одной ошибки, к тесту готова!");
+    $("missed").innerHTML = m.length
+      ? "<p>Повтори ещё раз:</p><ul>" + m.map(function (i) { return "<li>" + esc(WORDS[i].en) + " = " + esc(WORDS[i].de) + "</li>"; }).join("") + "</ul>"
+      : "";
+    $("again-missed").hidden = !m.length;
+    $("again-missed").onclick = function () { start(m); };
+    $("again").focus({ preventScroll: true });
+  }
+
+  function setDir(d) {
+    dir = d;
+    try { localStorage.setItem("vokabel-dir", d); } catch (e) {}
+    start(all());
+  }
+  $("dir-de2en").addEventListener("click", function () { setDir("de2en"); });
+  $("dir-en2de").addEventListener("click", function () { setDir("en2de"); });
+  $("again").addEventListener("click", function () { start(all()); });
+  $("swap").addEventListener("click", function () { setDir(dir === "de2en" ? "en2de" : "de2en"); });
+
+  function cell(main, alts, note) {
+    return "<td><b>" + esc(main) + "</b>" + (note ? "<span>" + esc(note) + "</span>" : "") +
+      (alts.length ? "<span>" + esc(alts.join(", ")) + "</span>" : "") + "</td>";
+  }
+  function renderDict() {
+    var q = norm($("search").value), n = 0;
+    $("rows").innerHTML = WORDS.map(function (w) {
+      var hay = norm([w.en, w.de].concat(w.enAlt, w.deAlt).join(" "));
+      if (q && hay.indexOf(q) < 0) return "";
+      n++;
+      return "<tr>" + cell(w.en, w.enAlt, w.note) + cell(w.de, w.deAlt) + "</tr>";
+    }).join("");
+    $("empty").hidden = n > 0;
+  }
+  $("search").addEventListener("input", renderDict);
+  renderDict();
+  start(all());
+})();
+</script>
